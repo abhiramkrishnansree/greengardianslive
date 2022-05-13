@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+        *{
+            margin: 0px;
+        }
+        #home{
+            width: 100%;
+            height: 100vh;
+        }
+        section{
+        animation-duration: 2s;
+        }
+        .logo{
+            display: flex;
+            font-family:Oswald;
+        }
+        h1{
+            padding-top: 8px;
+        }
+        .nav{
+            background-color: white;
+            box-shadow:grey 0px 1px 5px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            position: fixed;
+            z-index: 9999;
+        }
+        .menu{
+            padding-right: 20px;
+        }
+        .menu ul{
+            padding-top: 16px;
+            display: flex;
+            position: relative;
+            right: 0px;
+        }
+        .menu li{
+            list-style-type:none;
+        }
+        .menu li a{
+            text-decoration: none;
+            padding: 10px 15px;
+            font-family:poppins regular;
+            font-size: 16px;
+            color: green;
+        }
+        .middle img{
+            position: relative;
+            top: 100px;
+            left: 45px;
+        }
+        .middle p{
+            font-size: 50px;
+            font-family: poppins;
+            position: relative;
+            right: 0px;
+
+        }
+        .middle{
+            display: flex;
+            justify-content: space-between;
+        }
+        .title{
+            width: 60%;
+            font-family:poppins regular;
+            font-size: 100px;
+            position: relative;
+            top: 10vh;
+            left:5%;
+            background:transparent ;
+        }
+        .main{
+            line-height:80%;
+            color: rgb(93, 158, 13);
+        }
+        .new{
+            background-color: transparent;
+        }
+        .container{
+            position: relative;
+            top: 10%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .right img{
+            position:relative;
+            float: right;
+            top: 8%;
+        }
+        #about{
+            height: 100vh;
+        }
+        .deta{
+            width:40%;
+            text-align: justify;
+            padding: 10px;
+        }
+        h4{
+            font-size: 7px;
+            font-family:poppins regular;
+            color: rgb(45, 128, 0);
+            position: relative;
+            top: 75%;
+            left: -46.5%;
+        }
+        .menu ul li img{
+            position:relative;
+            top:-8%;
+        }
+       .all{
+           display: flex;
+           position: relative;
+       }
+       #contact{
+           height: 100vh;
+       }
+       .about{
+           width: 60%;
+           text-align: justify;
+           font-family: poppins regular;
+           position:relative;
+           left: 10%;
+           top: 14%;
+
+       }
+       .about h6{
+           font-size: 50px;
+           font-family: poppins thin;
+           padding-bottom: 20px;
+           color: rgb(143, 187, 22);
+       }
+       #gallery{
+           padding-top: 5%;
+           padding-left: 10%;
+           position:relative;
+           padding-bottom: 5%;
+
+       }
+       .gal{
+        font-size: 50px;
+           font-family: poppins thin;
+           padding-bottom: 20px;
+           color: rgb(143, 187, 22);
+           position:relative;
+           padding-left: 33%;
+       }
+       .foot{
+           padding-top: 2%;
+           font-size: 18px;
+           font-weight: 500;
+           color: grey;
+       }
+       .foot a{
+           text-decoration: none;
+           font-size: 19px;
+           color: green;
+       }
+       spam{
+           color: rgb(168, 234, 88);
+           font-weight:500;
+       }
+       #bus{
+            display: none;
+        }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 45%;
+    max-width: 100%;
+  }
+  .title{
+            width: 60%;
+            font-family:poppins regular;
+            font-size: 55px;
+            position: relative;
+            top: 10vh;
+            left:5%;
+            background:transparent ;
+        }
+        .container{
+            position: relative;
+            top: 10%;
+        }
+        .right img{
+            position:absolute;
+            top: 150%;
+            left: 20%;
+        }
+        .nav{
+            height: 8%;
+        }
+        .menu{
+            position:inherit;
+            display:none;
+            background-color: rgba(242, 255, 210, 0.305);
+            width: 100%;
+            height: 100vh;
+            padding-top: 15%;
+           
+            
+        }
+        .menu ul{
+            padding-top: 20%;
+            display:block;
+            right: 0px;
+            padding-right: 10%;
+            
+        }
+        .menu li{
+            list-style-type:none;
+            text-align: justify;
+            padding-bottom: 15%;
+            text-align: center;
+        }
+        .menu li a{
+            text-decoration: none;
+            padding:0px;
+            font-family:poppins regular;
+            font-size:28px;
+            color: green;
+        }
+
+        h1{
+            padding-top: 5px;
+        }
+        h4{
+            top: 70%;
+        }
+        #bus{
+            display:block;
+            position: absolute;
+            right: 13px;
+            top: 13px;
+        }
+        .about h6{
+            font-size: 40px;
+        }
+        .about{
+            font-size: 84%;
+            width: 80%;
+        }
+        #about{
+            height: fit-content;
+        }
+        #gallery{
+            padding-top: 20%;
+            padding-left: 0%;
+        }
+        .all{
+            display:none;
+        }
+        #contact{
+            height: 25vh;
+        }
+        .foot{
+            font-size:80%;
+            font-family:poppins;
+        }
+        #about{
+            padding-top:20%;
+        }
+        .gal{
+            padding-left: 28%;
+        }
+
+    }      
+    
+
+    </style>
+
+</head>
+<body>
+    <section id="home">
+        <div class="nav">
+            <div class="logo">
+                <img src="mainlogo.png" width="80px">
+                <h1>Green Gaurdians</h1>
+                <h4>Fruits and Vegitables</h4>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div id="bus">
+                <img src="men.png" width="38px" height="auto">
+            </div>
+        </div>
+    <div class="container">
+
+        <div class="title">
+            <h2 class="main">Fresh<br><spam class="new">Natural</spam><br>Homely</h2>
+        </div>
+        <div class="right">
+            <img src="apple.png" width="80%px" height="auto">
+        </div>
+    </div>
+    </section>
+    <section id="about">
+        <div class="about">
+            <h6>Organic, nature’s brand</h6>
+            <p>Are you in a business of fruits and vegetables or going to start it? and want fruits and vegetable 
+                slogan? Well, fruits and vegetable business is a very healthy and profitable business as food items 
+                are consumed by people on a daily basis. Although it doesn’t have to do long planning to buy these items.
+                 It’s an everyday item. Fruits and vegetables are very essential for a healthy lifestyle and a balanced diet. 
+
+                Fruit and vegetable business is very vast from a hawker to big departmental stores, from retailers to
+                 wholesalers and farmers. With the changing trends, e-shopping is also very common and useful for busy people.
+                  So now there are many fruit and vegetable stores offering online shopping and home delivery. 
+                
+                Whatever store you intended to open, a strong advertisement plan will bring you into the light and for
+                 that, you need fruit and veg slogans. People will come to know your business. A slogan is the backbone of 
+                 marketing strategy. So we will discuss in this article What is a slogan and how to write best fruit slogans 
+                 and also a list of vegetable slogans to help you.
+                <br><br>
+                Are you in a business of fruits and vegetables or going to start it? and want fruits and vegetable 
+                slogan? Well, fruits and vegetable business is a very healthy and profitable business as food items 
+                are consumed by people on a daily basis. Although it doesn’t have to do long planning to buy these items.
+                 It’s an everyday item. Fruits and vegetables are very essential for a healthy lifestyle and a balanced diet. 
+
+                Fruit and vegetable business is very vast from a hawker to big departmental stores, from retailers to
+                 wholesalers and farmers. With the changing trends, e-shopping is also very common and useful for busy people.
+                  So now there are many fruit and vegetable stores offering online shopping and home delivery.      
+            </p>
+        </div>
+     </section>
+
+     <section id="gallery">
+         <h3 class="gal">Gallery</h3>
+        <div class="row">
+            <div class="column">
+              <img src="a.jpg">
+              <img src="b.jpg">
+              <img src="c.jpg">
+              <img src="d.jpg">
+              <img src="l.jpg">
+              <img src="f.jpg">
+              <img src="g.jpg">
+            </div>
+            <div class="column">
+                <img src="a.jpg">
+                <img src="b.jpg">
+                <img src="c.jpg">
+                <img src="d.jpg">
+                <img src="l.jpg">
+                <img src="f.jpg">
+                <img src="g.jpg">
+            </div>
+            <div class="column">
+                <img src="a.jpg">
+              <img src="b.jpg">
+              <img src="c.jpg">
+              <img src="d.jpg">
+              <img src="l.jpg">
+              <img src="f.jpg">
+              <img src="g.jpg">
+            </div>
+          </div>
+    </section>
+
+
+
+    <!-- about Section -->
+    <section id="contact">
+       <div class="all">
+           <img src="1.jpg" width="25%">
+           <img src="2.jpg" width="25%">
+           <img src="3.jpg" width="25%">
+           <img src="4.jpg" width="25%">
+       </div>
+       <center>
+       <div class="foot">
+           <div class="footlogo">
+            
+           </div>
+           <div class="mail">
+           <label><a href="#">www.greengardians.live</a></label>
+           <br><br>
+           <label>All rights are obtained</label>
+           </div>
+           <br>
+           <label>Designed and Devoloped by <spam>Abhiram Krishnan</spam></label>
+       </div>
+    </center>
+    </section>
+    
+    
+</body>
+</html>
